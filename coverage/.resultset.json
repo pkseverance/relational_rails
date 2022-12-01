@@ -242,6 +242,11 @@
         "lines": [
           1,
           null,
+          1,
+          1,
+          null,
+          1,
+          1,
           null
         ]
       },
@@ -251,7 +256,65 @@
           null
         ]
       },
-      "/Users/patriciaseverance/Desktop/Turing/mod_2/projects/relational_rails/app/models/game.rb": {
+      "/Users/patriciaseverance/Desktop/Turing/mod_2/projects/relational_rails/spec/features/games/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/patriciaseverance/Desktop/Turing/mod_2/projects/relational_rails/spec/features/players/index_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/patriciaseverance/Desktop/Turing/mod_2/projects/relational_rails/spec/features/players/show_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/patriciaseverance/Desktop/Turing/mod_2/projects/relational_rails/app/models/player.rb": {
         "lines": [
           1,
           1,
@@ -265,23 +328,46 @@
           null
         ]
       },
-      "/Users/patriciaseverance/Desktop/Turing/mod_2/projects/relational_rails/spec/models/player_spec.rb": {
+      "/Users/patriciaseverance/Desktop/Turing/mod_2/projects/relational_rails/app/models/game.rb": {
         "lines": [
           1,
-          null,
           1,
-          2,
           null
         ]
       },
-      "/Users/patriciaseverance/Desktop/Turing/mod_2/projects/relational_rails/app/models/player.rb": {
+      "/Users/patriciaseverance/Desktop/Turing/mod_2/projects/relational_rails/app/controllers/games_controller.rb": {
         "lines": [
           1,
           1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/patriciaseverance/Desktop/Turing/mod_2/projects/relational_rails/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/patriciaseverance/Desktop/Turing/mod_2/projects/relational_rails/app/controllers/players_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
           null
         ]
       }
     },
-    "timestamp": 1669912523
+    "timestamp": 1669925058
   }
 }
