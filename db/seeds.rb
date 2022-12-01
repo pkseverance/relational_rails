@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+@player_1 = Player.create!(name: 'Trish', age: 22, is_online: true)
+@game_1 = @player_1.create!(name: 'Minecraft', is_installed: true, hours_played: 10000)
