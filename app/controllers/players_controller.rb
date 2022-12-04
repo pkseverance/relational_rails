@@ -1,6 +1,6 @@
 class PlayersController < ApplicationController
     def index
-        @players = Player.all
+        @players = Player.all.order('created_at DESC')
     end
 
     def show

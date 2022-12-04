@@ -7,4 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 @player_1 = Player.create!(name: 'Trish', age: 22, is_online: true)
-@game_1 = @player_1.create!(name: 'Minecraft', is_installed: true, hours_played: 10000)
+@player_2 = Player.create!(name: 'Lua', age: 23, is_online: true)
+
+@game_1 = @player_1.games.create!(name: 'Minecraft', is_installed: true, hours_played: 10000)
+@game_2 = @player_2.games.create!(name: 'Minecraft', is_installed: true, hours_played: 10000)
