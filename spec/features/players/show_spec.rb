@@ -13,4 +13,10 @@ RSpec.describe 'Players Show' do
         expect(page).to have_content(@player_1.age)
         expect(page).to have_content(@player_1.is_online)
     end
+
+    it 'shows number of games' do
+        visit "/players/#{@player_1.id}"
+
+        expect(page).to have_content("Games in Library: #{@player_1.games.count}")
+    end
 end
