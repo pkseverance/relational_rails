@@ -1,6 +1,6 @@
-<h1>Games</h1>
-<% @games.each do |game| %>
-    <p><%= game.name %></p>
+<h1><%= "#{@player.name}'s Games" %></h1>
+<% @player_games.each do |game| %>
+    <h3><%= game.name %></h3>
     <p> Is Installed: <%= game.is_installed %></p>
     <p> Hours Played: <%= game.hours_played %></p>
 <% end %>

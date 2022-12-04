@@ -9,5 +9,8 @@
 @player_1 = Player.create!(name: 'Trish', age: 22, is_online: true)
 @player_2 = Player.create!(name: 'Lua', age: 23, is_online: true)
 
-@game_1 = @player_1.games.create!(name: 'Minecraft', is_installed: true, hours_played: 10000)
-@game_2 = @player_2.games.create!(name: 'Minecraft', is_installed: true, hours_played: 10000)
+@game_1 = @player_1.games.create!(name: 'Minecraft', is_installed: true, hours_played: 70000)
+@game_2 = @player_1.games.create!(name: 'The Binding of Isaac: Rebirth', is_installed: true, hours_played: 300)
+
+@game_3 = @player_2.games.create!(name: 'Minecraft', is_installed: true, hours_played: 70000)
+@game_4 = @player_2.games.create!(name: 'The Binding of Isaac: Rebirth', is_installed: true, hours_played: 600)
