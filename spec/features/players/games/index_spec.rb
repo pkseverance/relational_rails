@@ -13,4 +13,10 @@ RSpec.describe 'Player Games Index' do
         expect(page).to have_content(@game_1.is_installed)
         expect(page).to have_content(@game_1.hours_played)
     end
+
+    it 'has links' do
+        visit "/players/#{@player_1.id}/games"
+
+        expect(page).to have_link('Games Index', href: '/games')
+    end
 end

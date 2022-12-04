@@ -11,4 +11,8 @@ RSpec.describe 'Games Index' do
 
         expect(page).to have_content(@game_1.name)
     end
+
+    it 'has links' do
+        
+    end
 end
