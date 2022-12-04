@@ -33,10 +33,5 @@ ActiveRecord::Schema.define(version: 2022_11_30_213809) do
     t.datetime "updated_at", null: false
   end
 
-  create_table "tasks", force: :cascade do |t|
-    t.string "title"
-    t.string "description"
-  end
-
   add_foreign_key "games", "players"
 end

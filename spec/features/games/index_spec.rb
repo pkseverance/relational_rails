@@ -13,6 +13,12 @@ RSpec.describe 'Games Index' do
     end
 
     it 'has links' do
-        
+        visit '/games'
+
+        expect(page).to have_link('Games Index', href: '/games')
+
+        visit '/games'
+
+        expect(page).to have_link('Players Index', href: '/players')
     end
 end
