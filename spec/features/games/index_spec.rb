@@ -9,14 +9,17 @@ RSpec.describe 'Games Index' do
     it 'shows names of games' do
         visit '/games'
 
+        expect(current_path).to eq('/games')
         expect(page).to have_content(@game_1.name)
     end
 
-    it 'has links' do
+    it 'has games index' do
         visit '/games'
 
         expect(page).to have_link('Games Index', href: '/games')
+    end
 
+    it 'has players index' do
         visit '/games'
 
         expect(page).to have_link('Players Index', href: '/players')

@@ -6,4 +6,28 @@ class PlayersController < ApplicationController
     def show
         @player = Player.find(params[:id])
     end
+
+    def new
+        
+    end
+    
+    def edit
+        @player = Player.find(params[:id])
+    end
+
+    def update
+        player = Player.find(params[:id])
+        player.update(player_params)
+        redirect_to '/players'
+    end
+
+    def create
+        create_player = Player.create(player_params)
+        redirect_to '/players'
+    end
+
+    private
+    def player_params
+        params.permit(:name, :age)
+    end
 end

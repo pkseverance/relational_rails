@@ -2,5 +2,8 @@
 <% @players.each do |player| %>
 <ul>
     <li><%= player.created_at %> <%= player.name %></li>
+    <%= button_to "Edit #{player.name}", "/players/#{player.id}/edit", method: :get %>
 </ul>
 <% end %>
+
+<%= link_to 'New Player', '/players/new' %>
