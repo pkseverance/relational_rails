@@ -4,3 +4,5 @@
     <p> Is Installed: <%= game.is_installed %></p>
     <p> Hours Played: <%= game.hours_played %></p>
 <% end %>
+
+<%= link_to 'New Game', "/players/#{@player.id}/games/new" %>

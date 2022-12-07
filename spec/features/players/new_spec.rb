@@ -13,10 +13,10 @@ RSpec.describe 'Player creation' do
 
         fill_in('name', with: 'Pierce')
         fill_in('age', with: 22)
+        fill_in('is_online', with: true)
         click_button('Create Player')
         
         expect(current_path).to eq('/players')
         expect(page).to have_content('Pierce')
-        expect(page).to have_content('22')
     end
 end

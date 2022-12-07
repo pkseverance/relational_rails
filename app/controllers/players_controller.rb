@@ -28,6 +28,6 @@ class PlayersController < ApplicationController
 
     private
     def player_params
-        params.permit(:name, :age)
+        params.permit(:name, :age, :is_online)
     end
 end

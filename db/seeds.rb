@@ -12,5 +12,5 @@
 @game_1 = @player_1.games.create!(name: 'Minecraft', is_installed: true, hours_played: 30000)
 @game_2 = @player_1.games.create!(name: 'The Binding of Isaac: Rebirth', is_installed: true, hours_played: 300)
 
-@game_3 = @player_2.games.create!(name: 'Minecraft', is_installed: true, hours_played: 30000)
-@game_4 = @player_2.games.create!(name: 'The Binding of Isaac: Rebirth', is_installed: true, hours_played: 600)
+@game_3 = @player_2.games.create!(name: 'Celeste', is_installed: true, hours_played: 130)
+@game_4 = @player_2.games.create!(name: '5D Chess With Multiverse Time Travel', is_installed: true, hours_played: 3)
