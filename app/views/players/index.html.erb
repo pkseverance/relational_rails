@@ -1,6 +1,10 @@
 <h1>Players</h1>
 <% @players.each do |player| %>
 <ul>
-    <li><%= player.created_at %> <%= player.name %></li>
+    <li><%= link_to "#{player.created_at} #{player.name}", "/players/#{player.id}/games" %></li>
+
+    <%= button_to "Edit #{player.name}", "/players/#{player.id}/edit", method: :get %>
 </ul>
 <% end %>
+
+<%= link_to 'New Player', '/players/new' %>

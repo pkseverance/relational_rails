@@ -19,4 +19,23 @@ RSpec.describe 'Players Show' do
 
         expect(page).to have_content("Games in Library: #{@player_1.games.count}")
     end
+
+    it 'links to players index' do
+        visit "/players/#{@player_1.id}"
+        
+        expect(page).to have_link('Games Index', href: '/games')
+
+    end
+
+    it 'links to games index' do
+        visit "/players/#{@player_1.id}"
+
+        expect(page).to have_link('Players Index', href: '/players')
+    end
+
+    it 'links to player games index' do
+        visit "/players/#{@player_1.id}"
+
+        expect(page).to have_link('Player Games Index', href: "/players/#{@player_1.id}/games")
+    end
 end
